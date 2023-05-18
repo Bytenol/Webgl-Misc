@@ -69,8 +69,7 @@ const draw = () => {
     ctx.fill();
     ctx.fillStyle = "#0000af";
     ctx.fillRect(box.pos.x, box.pos.y, box.size.x, box.size.y);
-
-    document.getElementById("velInfo").textContent = `u(${range.value * 10} p/s)`
+    document.getElementById("velInfo").textContent = `velocity(${box.vel.x.toPrecision(4)} p/s)`
 }
 
 const animate = () => {
